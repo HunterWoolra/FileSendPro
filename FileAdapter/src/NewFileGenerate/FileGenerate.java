@@ -3,18 +3,21 @@ package NewFileGenerate;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
+
+import FileAdapter.FileWatchControll;
+
 import java.io.File;
 import java.io.FileWriter;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.io.IOException;
 import java.io.BufferedWriter;
 import java.util.Calendar;
 
 public class FileGenerate {
+	
+	public void createFile() throws ParseException, IOException, InterruptedException {
 
-	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
-		
 		boolean flag = true; 
 		while(flag) {
 			SimpleDateFormat  simpleDate1 = new SimpleDateFormat("yyyyMMddHHmm");
@@ -88,16 +91,15 @@ public class FileGenerate {
  			}
  			 
  			
- 			
 		}
+	}
+
+		
 //		if ( flag = false ) break;
 		
 		
 		//1시간마다 파일을 생성한다.... 1시간마다 폴더 생성으로 변경하고 10분마다 파일 생성으로 변경예정.... File 내용은 특정경로의 text를 읽어서 기록하도록한다
 		
-		
-	}//end main
-
 	
 }//end class
 

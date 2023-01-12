@@ -21,10 +21,9 @@ public class ConfigLoader {
 	   static String constant1 = null;
 	   static String constant2 = null;
 	   
-	   
-	   
 	   public static String Conffile() throws IOException{
-	      Path filePath = Paths.get("D:/CP_Project/confHome/configuration.cfg");
+		  // 임의 경로 
+	      Path filePath = Paths.get("E:/Config/configuration.cfg");
 	      Charset charset = Charset.forName("UTF-8");
 	      
 	      ConfigElement cfe = new ConfigElement(3);

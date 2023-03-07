@@ -20,6 +20,8 @@ public class ConfigLoader {
 	   
 	   static String constant1 = null;
 	   static String constant2 = null;
+
+	   static String kafka1 = null;
 	   
 	   public static String Conffile() throws IOException{
 		  // 임의 경로 
@@ -50,6 +52,11 @@ public class ConfigLoader {
 	      
 	      constant1 = cfe.get("data.test.api.Constant.hdfspath");
 	      constant2 = cfe.get("data.test.api.Constant.localpath");
+
+		  kafka1 = cfe.get("data.test.api.kafka.topic");
+
+
+
 	         
 	      return constant1;
 	   }

@@ -24,11 +24,11 @@ public class FileWatchControll {
 	
 	public void init() throws IOException {
 		
-		//watchservice »ı¼º
+		//watchservice ìƒì„±
 		WatchService watchService = FileSystems.getDefault().newWatchService();
-		//°æ·Î
+		//Path
 		Path path = Paths.get(projectPath);
-		//»ı¼º »èÁ¦ ½Ã°£ ÀÌº¥Æ® 
+		//ìƒì„± ì‚­ì œ ì‹œê°„ ì´ë²¤íŠ¸
 		path.register(watchService,StandardWatchEventKinds.ENTRY_CREATE,StandardWatchEventKinds.ENTRY_DELETE,StandardWatchEventKinds.ENTRY_MODIFY,StandardWatchEventKinds.OVERFLOW);
 		
 		Thread thread = new Thread(()-> {
@@ -38,12 +38,12 @@ public class FileWatchControll {
 				}catch (InterruptedException e){
 					e.printStackTrace();
 				}
-				//List »ı¼ºÇØ¼­ ÀÌº¥Æ®°¡ ¹è¿­ÀÌ¸é events
+				//List ìƒì„±í•´ì„œ ì´ë²¤íŠ¸ê°€ ë°°ì—´ì´ë©´ events
 				List<WatchEvent<?>> events = watchkey.pollEvents();
 				for ( WatchEvent<?> event : events ) {
 					Kind<?> kind = event.kind();
 					
-					//°æ·Î
+					//Path
 					Path paths = (Path)event.context();
 					
 					System.out.println(paths.toAbsolutePath());
@@ -73,7 +73,7 @@ public class FileWatchControll {
 	}
 	public String output() {
 		System.out.println(projectPath);
-		return "ÆÄÀÏ°¨Áö!!";
+		return "File detect!!";
 	}
 	
 	

@@ -20,6 +20,8 @@ public class ConfigMain {
 	      System.out.println("hdfspath : " + cfl.constant1);
 	      System.out.println("localpath : " + cfl.constant2);
 
+		  System.out.println("topic : " + cfl.kafka1);
+
 		
 	}
 

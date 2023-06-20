@@ -1,7 +1,7 @@
 # FileMain
 
 
-![File 수집 Flow](https://drive.google.com/file/d/1vYDu8PCsjxpBz2Zy_Dxgn7rdpPsdsHCa/view?usp=drive_link "수집이미지")
+![File 수집 Flow](https://drive.google.com/file/d/1vYDu8PCsjxpBz2Zy_Dxgn7rdpPsdsHCa/view?usp=sharing "수집이미지")
 
 
 

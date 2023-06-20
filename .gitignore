@@ -2,5 +2,9 @@
 .idea
 !/pom.xml
 /.gitignore
+/src/main
 
+
+/src/main
 !/src/main/java/test/word/count/
+!/target

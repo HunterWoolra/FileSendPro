@@ -1,7 +1,7 @@
 # FileMain
 
 
-![File 수집 Flow](https://drive.google.com/open?id={1vYDu8PCsjxpBz2Zy_Dxgn7rdpPsdsHCa} "수집이미지")
+![File 수집 Flow](https://drive.google.com/uc?id=1vYDu8PCsjxpBz2Zy_Dxgn7rdpPsdsHCa "수집이미지")
 
 
 

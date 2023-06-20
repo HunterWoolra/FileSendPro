@@ -1,10 +1,8 @@
-/.metadata/
+.metadata/
 .idea
 !/pom.xml
-/.gitignore
-/src/main
+.gitignore
 
-
-/src/main
-!/src/main/java/test/word/count/
-!/target
+src/main/java/test
+src/test/
+target/
